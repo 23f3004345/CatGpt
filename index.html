@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatGPT 🐱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CatGPT 🐱</h1>
+            <p class="subtitle">Your quirky feline chat companion</p>
+        </header>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="messages" id="messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+        </div>
+        
+        <div class="loading-indicator" id="loadingIndicator">
+            <span class="loading-cat">🐱</span>
+            <span class="loading-text">Thinking...</span>
+        </div>
+        
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Say something... 🐱" 
+                autocomplete="off"
+            >
+            <button id="sendButton" class="send-button">➤</button>
+        </div>
+        
+        <div class="controls">
+            <button id="clearButton" class="clear-button">Clear History</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
